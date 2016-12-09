@@ -15,6 +15,10 @@ class Runner{
     player1.receiveCard(card2);
     player2.receiveCard(card3);
     player2.receiveCard(card4);
+
+    System.out.println(player1.getName() + " has " + player1.showHand());
+    System.out.println(player2.getName() + " has " + player2.showHand());
+ 
     
 
     
