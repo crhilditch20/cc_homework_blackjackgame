@@ -9,11 +9,19 @@ public class Game {
   public Game(){
     this.players = new ArrayList<Player>();
     this.deck = new Deck();
-}
+  }
 
   public void startGame(){
-    this.deck.buildDeck();
-    
-}
-
+    this.deck.buildDeck();    
   }
+
+  public int countPlayers(){
+    return players.size();
+  }
+
+  public void addPlayer(Player player){
+    players.add(player);
+  }
+
+
+}
