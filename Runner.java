@@ -5,8 +5,8 @@ class Runner{
 
     Deck deck = new Deck();
     Player player = new Player("Bob");
-    Hand hand = new Hand();
     deck.buildDeck();
+    Hand hand = player.getHand();
    
     Card card1 = deck.dealCard();
     Card card2 = deck.dealCard();
