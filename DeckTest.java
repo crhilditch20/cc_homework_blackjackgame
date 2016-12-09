@@ -30,6 +30,11 @@ public class DeckTest {
       assertEquals(52, deck.cardCount());
     }
 
-
+    @Test
+    public void testCanDealCard(){
+      deck.buildDeck();
+      deck.dealCard();
+      assertEquals(51, deck.cardCount());
+    }
   }
 

@@ -28,6 +28,8 @@ public class Deck{
      Collections.shuffle(cards);
     }
   }
-
+  public Card dealCard(){
+    return cards.remove(0);
+  }
  
 }
