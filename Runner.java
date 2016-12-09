@@ -6,7 +6,7 @@ class Runner{
     Player player1 = new Player("Bob");
     Player player2 = new Player("Jen");
     deck.buildDeck();
-    Hand hand = new Hand();
+
     Card card1 = deck.dealCard();
     Card card2 = deck.dealCard();
     Card card3 = deck.dealCard();
@@ -19,9 +19,7 @@ class Runner{
     System.out.println(player1.getName() + " has " + player1.showHand());
     System.out.println(player2.getName() + " has " + player2.showHand());
  
-    
-
-    
+   
       
    // presume this will form the basis of the Game class....
 
