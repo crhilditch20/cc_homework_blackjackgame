@@ -31,5 +31,14 @@ public class PlayerTest {
     assertEquals(2, hand.cardCount());
   }
 
+  @Test
+  public void testPlayerShowsHand(){
+    Card card1 = new Card(CardSuit.SPADES, CardValue.JACK);
+    Card card2 = new Card(CardSuit.CLUBS, CardValue.KING);
+    player.receiveCard(card1);
+    player.receiveCard(card2);
+    assertEquals(24, player.showHand());
+  }
+
 
 }

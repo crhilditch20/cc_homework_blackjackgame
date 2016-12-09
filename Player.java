@@ -23,4 +23,8 @@ public class Player {
     this.hand.addCard(card);
   }
 
+  public int showHand(){
+    return this.hand.calculateValue();
+  }
+
 }
