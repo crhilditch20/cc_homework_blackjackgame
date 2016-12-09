@@ -7,7 +7,7 @@ public class CardTest {
 
   @Before 
   public void before() {
-    card = new Card(CardSuit.SPADES, CardValue.JACK);
+    card = new Card(CardSuit.SPADES, CardValue.KING);
   }
 
   @Test
@@ -17,11 +17,11 @@ public class CardTest {
 
   @Test
   public void testHasValue(){
-    assertEquals(CardValue.JACK, card.getValue());
+    assertEquals(CardValue.KING, card.getValue());
   }
 
-  // @Test
-  // public void testValueToInteger(){
-  //   assertEquals(10, card.valueToInteger());
-  // }
+  @Test
+  public void testConvertValueToInteger(){
+    assertEquals(13, card.valueToInteger());
+  }
 }

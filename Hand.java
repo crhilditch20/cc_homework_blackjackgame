@@ -9,15 +9,15 @@ public class Hand{
   }
 
   public int cardCount(){
-    return hand.size();
+    return this.hand.size();
   }
 
   public void addCard(Card card){
-    hand.add(card);
+    this.hand.add(card);
   }
 
-  public Card showHand(int index){
-    return hand.get(index);
+  public Card showCard(int index){
+    return this.hand.get(index);
   }
 
 

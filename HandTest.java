@@ -23,12 +23,12 @@ public class HandTest {
     }
 
     @Test
-    public void canShowHand(){
+    public void canShowCard(){
       Card card1 = new Card(CardSuit.SPADES, CardValue.JACK);
       Card card2 = new Card(CardSuit.SPADES, CardValue.ACE);
       hand.addCard(card1);
       hand.addCard(card2);
-      assertEquals(card1, hand.showHand(0));
+      assertEquals(card1, hand.showCard(0));
     }
 
   }
