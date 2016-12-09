@@ -8,6 +8,10 @@ public class Deck{
     this.cards = new ArrayList<Card>();
   }
 
+  public ArrayList getCards(){
+    return this.cards;
+  }
+
   public int cardCount(){
     return cards.size();
   }
@@ -21,7 +25,9 @@ public class Deck{
     for (CardValue value: CardValue.values()){
       cards.add(new Card(suit, value));
      }
+     Collections.shuffle(cards);
     }
   }
 
+ 
 }

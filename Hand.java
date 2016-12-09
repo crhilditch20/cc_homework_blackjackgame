@@ -20,5 +20,13 @@ public class Hand{
     return this.hand.get(index);
   }
 
+  public int calculateValue(){
+    int result = 0;
+    for (Card card : hand) {
+      result += card.valueToInteger();
+    }
+    return result;
+  }
+
 
 }
