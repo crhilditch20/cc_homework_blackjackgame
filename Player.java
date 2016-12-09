@@ -19,4 +19,8 @@ public class Player {
     return this.hand;
   }
 
+  public void receiveCard(Card card){
+    this.hand.addCard(card);
+  }
+
 }

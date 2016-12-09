@@ -22,12 +22,12 @@ public class PlayerTest {
   }
 
   @Test
-  public void testHas2CardsInHand() {
+  public void testReceiveCard(){
     Card card1 = new Card(CardSuit.SPADES, CardValue.JACK);
     Card card2 = new Card(CardSuit.CLUBS, CardValue.KING);
+    player.receiveCard(card1);
+    player.receiveCard(card2);
     Hand hand = player.getHand();
-    hand.addCard(card1);
-    hand.addCard(card2);
     assertEquals(2, hand.cardCount());
   }
 
