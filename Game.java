@@ -48,12 +48,21 @@ public class Game {
   public void declareWinner(){
     Player player = players.get(0);
     Player dealer = players.get(1);
-    if (player.showHand() > dealer.showHand()){
-      System.out.println(player.getName() + " is the winner");
-    }
-    else
+      if (player.showHand() > 21 && dealer.showHand() > 21){
+      System.out.println("Nobody wins, deal again");
+      }
+      else if (player.showHand() > 21 && dealer.showHand() <= 21){
       System.out.println(dealer.getName() + " is the winner");
-    }
+      }
+      else if (dealer.showHand() > 21 && player.showHand() <= 21){
+      System.out.println(player.getName() + " is the winner");
+      }
+      else if (player.showHand() > dealer.showHand()){
+        System.out.println(player.getName() + " is the winner");
+      }
+      else
+        System.out.println(dealer.getName() + " is the winner");
+  }
 
       
     
