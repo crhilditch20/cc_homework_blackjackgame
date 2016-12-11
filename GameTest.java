@@ -23,13 +23,15 @@ public class GameTest {
   }
 
   @Test
-  public void testPlayerGetsTwoCards(){
+  public void testDealCardsToAll(){
     Player player1 = new Player("Steph");
     Player player2 = new Player("Jeff");
+    Dealer dealer = new Dealer("Paddy");
     game.startGame();
     game.addPlayer(player1);
     game.addPlayer(player2);
-    game.playerGetsTwoCards();
+    game.addPlayer(dealer);
+    game.dealCardsToAll();
     Hand hand = player1.getHand();
     int result = hand.cardCount();
     assertEquals(2, result);

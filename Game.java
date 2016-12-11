@@ -23,7 +23,7 @@ public class Game {
     players.add(player);
   }
 
-  public void playerGetsTwoCards(){
+  public void dealCardsToAll(){
     int i = 0;
     for (i = 0; i < 2; i++){
       for (Player player:players){
