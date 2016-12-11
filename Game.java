@@ -60,8 +60,12 @@ public class Game {
       else if (player.showHand() > dealer.showHand()){
         System.out.println(player.getName() + " is the winner");
       }
-      else
+      else if (player.showHand() == dealer.showHand()){
+        System.out.println("It's a tie");
+      }
+      else 
         System.out.println(dealer.getName() + " is the winner");
+
   }
 
       
