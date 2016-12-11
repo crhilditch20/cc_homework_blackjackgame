@@ -29,11 +29,5 @@ public class Player {
     return this.hand.calculateValue();
   }
 
-  // public boolean canWin(){
-  //   int hand = showHand();
-  //   if (hand > 21) this.under21 = false;
-  //   else this.under21 = true;
-  //   return this.under21;
-  // }
 
 }

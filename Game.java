@@ -65,7 +65,6 @@ public class Game {
       }
       else 
         System.out.println(dealer.getName() + " is the winner");
-
   }
 
       

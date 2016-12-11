@@ -40,13 +40,5 @@ public class DealerTest {
     assertEquals(24, dealer.showHand());
   }
 
-  // @Test
-  // public void testIsWinner(){
-  //   Card card1 = new Card(CardSuit.SPADES, CardValue.JACK);
-  //   Card card2 = new Card(CardSuit.CLUBS, CardValue.KING);
-  //   dealer.receiveCard(card1);
-  //   dealer.receiveCard(card2);
-  //   assertEquals(false, dealer.canWin());
-  // }
-
+ 
 }
