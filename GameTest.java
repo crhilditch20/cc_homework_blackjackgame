@@ -17,8 +17,8 @@ public class GameTest {
 
   @Test
   public void testCanAddPlayers(){
-    Player player = new Player("Steph");
-    game.addPlayer(player);
+    Player player1 = new Player("Steph");
+    game.addPlayer(player1);
     assertEquals(1, game.countPlayers());
   }
 
@@ -34,4 +34,15 @@ public class GameTest {
     int result = hand.cardCount();
     assertEquals(2, result);
   }
+
+  // @Test
+  // public void testCanDeclareWinner(){
+  //   Player player1 = new Player("Steph");
+  //   Player player2 = new Player("Jeff");
+  //   game.startGame();
+  //   game.addPlayer(player1);
+  //   game.addPlayer(player2);
+  //   game.playerGetsTwoCards();
+  //   assertEquals("Steph", game.declareWinner());
+  // }
 }

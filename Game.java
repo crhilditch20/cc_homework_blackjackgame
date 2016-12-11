@@ -31,8 +31,15 @@ public class Game {
         player.receiveCard(card);
       }
     }
-
   }
+
+  // public String declareWinner(){
+  //   for (Player player:players){
+  //         player.showHand();
+  //   }
+  // }
+
+  
 
 }
 
