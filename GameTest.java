@@ -17,8 +17,21 @@ public class GameTest {
 
   @Test
   public void testCanAddPlayers(){
-    Player player = new Player("Kev");
+    Player player = new Player("Steph");
     game.addPlayer(player);
     assertEquals(1, game.countPlayers());
+  }
+
+  @Test
+  public void testPlayerGetsTwoCards(){
+    Player player1 = new Player("Steph");
+    Player player2 = new Player("Jeff");
+    game.startGame();
+    game.addPlayer(player1);
+    game.addPlayer(player2);
+    game.playerGetsTwoCards();
+    Hand hand = player1.getHand();
+    int result = hand.cardCount();
+    assertEquals(2, result);
   }
 }
