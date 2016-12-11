@@ -19,6 +19,4 @@ public class Card {
     public int valueToInteger(){
       return (this.value.ordinal()+2); 
     }
-
-    //could use .ordinal() for this??
 }

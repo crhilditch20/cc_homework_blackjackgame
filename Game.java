@@ -21,6 +21,12 @@ public class Game {
 
   public void addPlayer(Player player){
     players.add(player);
+    System.out.println(player.getName() + " is playing");
+  }
+
+  public void addDealer(Dealer dealer){
+    players.add(dealer);
+    System.out.println(dealer.getName() + " is the dealer");
   }
 
   public void dealCardsToAll(){
@@ -33,14 +39,29 @@ public class Game {
     }
   }
 
-  // public String declareWinner(){
-  //   for (Player player:players){
-  //         player.showHand();
-  //   }
-  // }
+  public void showAllHands(){
+    for (Player player:players){
+          System.out.println(player.getName() + "'s hand is " + player.showHand());
+    }
+  }
 
+  public void declareWinner(){
+    Player player = players.get(0);
+    Player dealer = players.get(1);
+    if (player.showHand() > dealer.showHand()){
+      System.out.println(player.getName() + " is the winner");
+    }
+    else
+      System.out.println(dealer.getName() + " is the winner");
+    }
+
+      
+    
   
-
 }
+
+
+
+
 
 

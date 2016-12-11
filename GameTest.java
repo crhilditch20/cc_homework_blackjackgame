@@ -17,34 +17,36 @@ public class GameTest {
 
   @Test
   public void testCanAddPlayers(){
-    Player player1 = new Player("Steph");
-    game.addPlayer(player1);
-    assertEquals(1, game.countPlayers());
+    Player player = new Player("Steph");
+    Dealer dealer = new Dealer("Jeff");
+    game.addPlayer(player);
+    game.addDealer(dealer);
+    assertEquals(2, game.countPlayers());
   }
 
   @Test
   public void testDealCardsToAll(){
-    Player player1 = new Player("Steph");
-    Player player2 = new Player("Jeff");
-    Dealer dealer = new Dealer("Paddy");
+    Player player = new Player("Steph");
+    Dealer dealer = new Dealer("Jeff");
     game.startGame();
-    game.addPlayer(player1);
-    game.addPlayer(player2);
+    game.addPlayer(player);
     game.addPlayer(dealer);
     game.dealCardsToAll();
-    Hand hand = player1.getHand();
+    Hand hand = player.getHand();
     int result = hand.cardCount();
     assertEquals(2, result);
   }
 
   // @Test
   // public void testCanDeclareWinner(){
-  //   Player player1 = new Player("Steph");
-  //   Player player2 = new Player("Jeff");
+  //   Player player = new Player("Steph");
+  //   Dealer dealer = new Dealer("Jeff");
   //   game.startGame();
-  //   game.addPlayer(player1);
-  //   game.addPlayer(player2);
-  //   game.playerGetsTwoCards();
-  //   assertEquals("Steph", game.declareWinner());
+  //   game.addPlayer(player);
+  //   game.addPlayer(dealer);
+  //   game.dealCardsToAll();
+  //   assertEquals("Steph is the winner", game.declareWinner());
   // }
+
+ 
 }

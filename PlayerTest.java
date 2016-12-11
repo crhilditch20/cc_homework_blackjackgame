@@ -40,5 +40,14 @@ public class PlayerTest {
     assertEquals(24, player.showHand());
   }
 
+  // @Test
+  // public void testIsWinner(){
+  //   Card card1 = new Card(CardSuit.SPADES, CardValue.JACK);
+  //   Card card2 = new Card(CardSuit.CLUBS, CardValue.KING);
+  //   player.receiveCard(card1);
+  //   player.receiveCard(card2);
+  //   assertEquals(false, player.canWin());
+  // }
+
 
 }
